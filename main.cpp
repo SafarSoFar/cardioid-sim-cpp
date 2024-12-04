@@ -3,7 +3,6 @@
 #include "raymath.h"
 #include <random>
 
-
 std::random_device rd;
 std::default_random_engine eng(rd());
 
@@ -94,15 +93,10 @@ int main(void)
         multiplier += 0.01;
         ClearBackground(BLACK);
 
-        
         EndDrawing();
-        //----------------------------------------------------------------------------------
     }
 
-    // De-Initialization
-    //--------------------------------------------------------------------------------------
-    CloseWindow();        // Close window and OpenGL context
-    //--------------------------------------------------------------------------------------
+    CloseWindow();
 
     return 0;
 }
