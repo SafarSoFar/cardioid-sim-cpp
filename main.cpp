@@ -9,22 +9,6 @@ std::default_random_engine eng(rd());
 #define SCREEN_WIDTH 1920/1.2
 #define SCREEN_HEIGHT 1080/1.2
 
-Vector2 operator+(Vector2 lhs, Vector2 rhs){
-  return Vector2{lhs.x+rhs.x, lhs.y+rhs.y};
-}
-
-Vector2 operator-(Vector2 lhs, Vector2 rhs){
-  return Vector2{lhs.x-rhs.x, lhs.y-rhs.y};
-}
-
-Vector2 operator*(Vector2 lhs, float rhs){
-  return Vector2{lhs.x*rhs, lhs.y * rhs};
-}
-
-Vector2 operator/(Vector2 lhs, float rhs){
-  return Vector2{lhs.x/rhs, lhs.y/rhs};
-}
-
 
 Vector2 surfacePointRot(float radius,float angle){
   float rad = angle * DEG2RAD;
